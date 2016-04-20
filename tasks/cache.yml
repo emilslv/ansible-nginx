@@ -1,0 +1,2 @@
+- name: Nginx | Create folder for nginx cache 
+  file: path=/usr/share/nginx/cache state=directory

@@ -1,3 +1,4 @@
 - include: source.yml
 - include: modules/pagespeed.yml
 - include: vhosts.yml
+- include: cache.yml
