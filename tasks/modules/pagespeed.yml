@@ -19,3 +19,6 @@
   args:
     chdir: "/tmp/ngx_pagespeed-release-{{nginx_pagespeed_version}}-beta"
     creates: "/tmp/ngx_pagespeed-release-{{nginx_pagespeed_version}}-beta/psol"
+- name: Nginx | Create pagespeed cache folder
+  file: dest=/var/ngx_pagespeed_cache recurse=yes mode=0755 state=directory owner=www-data group=www-data
+  
