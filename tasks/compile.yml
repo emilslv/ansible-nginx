@@ -1,0 +1,16 @@
+- name: Nginx | Compile the Nginx source
+  shell: >
+    cd /tmp/{{nginx}}-{{nginx_version}} &&
+    ./configure
+    --sbin-path=/usr/sbin/nginx 
+    --conf-path=/etc/nginx/nginx.conf 
+    --pid-path=/var/run/nginx.pid 
+    --with-http_ssl_module 
+    --with-file-aio
+    --with-stream 
+    --with-mail=dynamic 
+    --with-http_gzip_static_module 
+    --with-http_gunzip_module
+    --add-module=/tmp/ngx_pagespeed-release-{{nginx_pagespeed_version}}-beta &&
+    make &&
+    make install
