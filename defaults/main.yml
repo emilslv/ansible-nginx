@@ -9,6 +9,6 @@ nginx_source_url: "http://nginx.org/download/nginx-{{nginx_version}}.tar.gz"
 nginx_conf: "{{nginx_dir}}/nginx.conf"
 
 
-nginx_pagespeed_version: 1.9.32.4
+nginx_pagespeed_version: 1.11.33.0
 
 
