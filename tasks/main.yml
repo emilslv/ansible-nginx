@@ -1,0 +1,2 @@
+- include: source.yml
+- include: modules/pagespeed.yml

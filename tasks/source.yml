@@ -1,0 +1,8 @@
+- name: Nginx | Download the Nginx source
+  get_url:
+    url: "{{nginx_source_url}}"
+    dest: "/tmp/nginx-{{nginx_version}}.tar.gz"
+- name: Nginx | Unpack the compressed Nginx source
+  command: tar -xvzf /tmp/nginx-{{nginx_version}}.tar.gz
+           chdir=/tmp creates=/tmp/nginx-{{nginx_version}}/README
+

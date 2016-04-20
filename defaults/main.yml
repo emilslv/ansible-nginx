@@ -1,0 +1,14 @@
+nginx_version: "1.9.14"
+nginx: "nginx"
+
+nginx_dir: "/etc/nginx"
+nginx_log_dir: "/var/log/nginx"
+nginx_pid: "/var/run/nginx.pid"
+
+nginx_source_url: "http://nginx.org/download/nginx-{{nginx_version}}.tar.gz"
+nginx_conf: "{{nginx_dir}}/nginx.conf"
+
+
+nginx_pagespeed_version: 1.9.32.4
+
+
