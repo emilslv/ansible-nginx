@@ -1,4 +1,5 @@
 nginx_version: "1.9.14"
+nginx_naxsi_version: "0.53-2"
 nginx: "nginx"
 
 nginx_dir: "/etc/nginx"
