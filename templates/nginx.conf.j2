@@ -38,6 +38,7 @@ http {
 	pagespeed on;
 	pagespeed FileCachePath /var/ngx_pagespeed_cache;
 	include /etc/nginx/mime.types;
+	include /etc/nginx/naxsi_core.rules;
 	default_type application/octet-stream;
 	
 	##

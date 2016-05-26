@@ -17,6 +17,7 @@
     --with-http_v2_module
     --with-ipv6
     --with-http_realip_module
-    --add-module=/tmp/ngx_pagespeed-release-{{nginx_pagespeed_version}}-beta &&
+    --add-module=/tmp/ngx_pagespeed-release-{{nginx_pagespeed_version}}-beta
+    --add-module=/tmp/naxsi &&
     make &&
     make install

@@ -9,6 +9,8 @@
         - libpcre3
         - libpcre3-dev
         - libssl-dev
+        - libgeoip-dev
+        - libxslt1-dev
     - include: 'tasks/main.yml'
     - include: 'tasks/compile.yml'
     - name: Nginx | Install the upstart init script
