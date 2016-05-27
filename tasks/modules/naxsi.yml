@@ -1,9 +1,9 @@
 - name: Nginx | Modules | Download naxsi source
   get_url:
-    url: "https://github.com/nbs-system/naxsi/archive/{{nginx_pagespeed_version}}.tar.gz"
-    dest: "/tmp/naxsi.tar.gz"
+    url: "https://github.com/nbs-system/naxsi/archive/{{nginx_naxsi_version}}.tar.gz"
+    dest: "/tmp/naxsi-{{nginx_naxsi_version}}.tar.gz"
 - name: Nginx | Modules | Unpack naxsi
-  command: tar -xvzf /tmp/naxsi-{{nginx_pagespeed_version}}.tar.gz
+  command: tar -xvzf /tmp/naxsi-{{nginx_naxsi_version}}.tar.gz
   args:
     chdir: /tmp
-    creates: "/tmp/naxsi-{{nginx_pagespeed_version}}"
+    creates: "/naxsi-{{nginx_naxsi_version}}"

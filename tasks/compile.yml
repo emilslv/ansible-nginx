@@ -18,6 +18,6 @@
     --with-ipv6
     --with-http_realip_module
     --add-module=/tmp/ngx_pagespeed-release-{{nginx_pagespeed_version}}-beta
-    --add-module=/tmp/naxsi &&
+    --add-module=/tmp/naxsi-{{nginx_naxsi_version}}/naxsi_src &&
     make &&
     make install
