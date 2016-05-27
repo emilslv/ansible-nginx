@@ -7,3 +7,9 @@
   args:
     chdir: /tmp
     creates: "/naxsi-{{nginx_naxsi_version}}"
+- name: Nginx | Modules | Copy naxsi core rules
+  template:
+        src: templates/naxsi_core.rules.j2
+        dest: /etc/nginx/naxsi_core.rules
+        owner: root
+        group: root
